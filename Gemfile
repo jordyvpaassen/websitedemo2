@@ -1,8 +1,7 @@
 source "https://rubygems.org"
-gemspec
 
-gem "jekyll-github-metadata", ">= 2.15"
+# to publish on github page
+gem 'github-pages', group: :jekyll_plugins
 
-gem "jekyll-include-cache", group: :jekyll_plugins
-
-gem "html-proofer", "~> 5.0", :group => :development
+# to publich without github page
+#gem "jekyll"
