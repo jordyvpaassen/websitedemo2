@@ -1,9 +1,8 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
+gemspec
 
-gem 'jekyll', '3.8.4'
+gem "jekyll-github-metadata", ">= 2.15"
 
-group :jekyll_plugins do
-  gem 'jekyll-feed', '0.11.0'
-  gem 'jekyll-seo-tag', '2.5.0'
-  gem 'jekyll-sitemap', '1.2.0'
-end
+gem "jekyll-include-cache", group: :jekyll_plugins
+
+gem "html-proofer", "~> 5.0", :group => :development
